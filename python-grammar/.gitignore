@@ -2,5 +2,8 @@
 Lib/
 Scripts/
 
+# pycache
+__pycache__/
+
 # VS Code 설정
 .vscode/
