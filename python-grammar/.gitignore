@@ -1,3 +1,6 @@
 # Python 가상 환경 관련
 Lib/
 Scripts/
+
+# VS Code 설정
+.vscode/
