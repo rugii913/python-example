@@ -10,7 +10,7 @@ data = [
     ["형돈", 5, 32],
 ]
 
-file = open("./myvenv/chapter10/student.csv", "w", newline = "", encoding="utf-8-sig") # Windows 사용할 경우 자동으로 한 줄 씩 개행 문자가 들어가서 이를 막기위해 newline = ""를 줌
+file = open("./myvenv/elementary/chapter10/student.csv", "w", newline = "", encoding="utf-8-sig") # Windows 사용할 경우 자동으로 한 줄 씩 개행 문자가 들어가서 이를 막기위해 newline = ""를 줌
 writer = csv.writer(file)
 
 for datum in data:
@@ -19,7 +19,7 @@ for datum in data:
 file.close()
 
 ## csv 파일 읽기
-with open("./myvenv/chapter10/student.csv", "r", encoding="utf-8-sig") as read_file:
+with open("./myvenv/elementary/chapter10/student.csv", "r", encoding="utf-8-sig") as read_file:
     reader = csv.reader(read_file)
     for datum in reader:
         print(datum)
