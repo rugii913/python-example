@@ -1,0 +1,2 @@
+Python 공부
+Django 공부
