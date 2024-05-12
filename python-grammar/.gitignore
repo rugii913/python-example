@@ -7,3 +7,6 @@ __pycache__/
 
 # VS Code 설정
 .vscode/
+
+# database 파일
+*.db
