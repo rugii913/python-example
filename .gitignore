@@ -1,0 +1,21 @@
+# Python 가상 환경 관련
+venv/
+myvenv/
+crawling-venv/
+Include/
+Lib/
+Scripts/
+
+# pycache
+__pycache__/
+
+# sqlite
+*.sqlite3
+*.db
+
+# VS Code 설정
+.vscode/
+
+# Django
+## settings.py 파일 내에 비밀 취급 정보 존재
+django_basic/django_basic/settings.py
