@@ -14,9 +14,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# urls.py는 url 요청 경로를 기반으로 어디로 보낼지, 어떤 함수를 실행시킬지 등을 정의해두는 파일
+from shortener.views import index, redirect_test
 from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), # Django가 이미 만들어준 url
+    path("", index, name="index"), # name은 redirect 등을 위해 필요한 이름
+    path("redirect", redirect_test),
 ]
