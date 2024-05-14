@@ -6,6 +6,11 @@
     <title>Django Basic</title>
 </head>
 <body>
-    <span>{{ welcome_msg }}!</span><!-- app의 views.py 파일을 이용해 Django에 의해 렌더링됨 -->
+    <!-- app의 views.py 파일을 이용해 Django에 의해 렌더링됨 -->
+    <span>{{ user }}!</span> <!-- Django의 user 모델이 알아서 user의 username 데이터를 return -->
+    <span>{{ user.email }}!</span> <!-- 모델의 데이터를 템플릿에서 활용 가능 -->
+    {% for i in params %}
+    <span>{{i}}</span>
+    {% endfor %} <!-- { % .. % } 은 시작을 하면 끝맺음을 해줘야함 ex. { % for i in params % }{ % endfor % } { % if .. % }{ % endif % } -->
 </body>
 </html>
