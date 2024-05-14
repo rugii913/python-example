@@ -13,6 +13,9 @@ __pycache__/
 *.sqlite3
 *.db
 
+# migration 관련 생성 파일
+migrations/
+
 # VS Code 설정
 .vscode/
 
